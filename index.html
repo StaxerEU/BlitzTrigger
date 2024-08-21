@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Themed Page</title>
+    <title>Dark Themed Page with Gradient</title>
     <style>
         body {
-            background-color: #000000;
+            background: linear-gradient(135deg, #000000, #1C1C1C); /* Gradient from black to darker black */
             color: #FFFFFF;
             font-family: Arial, sans-serif;
             margin: 0;
@@ -14,39 +14,46 @@
         }
 
         header {
-            background-color: #4B0082; /* Dark Purple */
+            background: linear-gradient(135deg, #4B0082, #8B00FF); /* Gradient from dark purple to a lighter shade */
             padding: 20px;
             text-align: center;
         }
 
         h1 {
-            color: #FF0000; /* Red */
+            color: #FF4500; /* Slightly lighter red */
             margin: 0;
         }
 
         nav {
-            background-color: #000000;
+            background: linear-gradient(135deg, #000000, #1C1C1C); /* Matching the body background gradient */
             padding: 10px;
             text-align: center;
         }
 
         nav a {
-            color: #FF0000; /* Red */
+            color: #FF4500; /* Lighter red */
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
         }
 
         nav a:hover {
-            color: #4B0082; /* Dark Purple */
+            color: #8B00FF; /* Lighter purple on hover */
         }
 
         section {
             padding: 20px;
+            background: linear-gradient(135deg, #1C1C1C, #000000); /* Reverse gradient */
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #FF4500; /* Lighter red */
         }
 
         .button {
-            background-color: #FF0000; /* Red */
+            background: linear-gradient(135deg, #FF0000, #FF4500); /* Gradient button from red to lighter red */
             border: none;
             color: white;
             padding: 10px 20px;
@@ -57,14 +64,15 @@
             margin: 4px 2px;
             cursor: pointer;
             border-radius: 4px;
+            transition: background 0.3s ease;
         }
 
         .button:hover {
-            background-color: #4B0082; /* Dark Purple */
+            background: linear-gradient(135deg, #8B00FF, #4B0082); /* Gradient to dark purple on hover */
         }
 
         footer {
-            background-color: #4B0082; /* Dark Purple */
+            background: linear-gradient(135deg, #4B0082, #8B00FF); /* Gradient footer matching header */
             padding: 10px;
             text-align: center;
             position: fixed;
@@ -76,7 +84,7 @@
 <body>
 
     <header>
-        <h1>Dark Themed Page</h1>
+        <h1>Dark Themed Page with Gradient</h1>
     </header>
 
     <nav>
@@ -86,8 +94,8 @@
     </nav>
 
     <section>
-        <h2>Welcome to the Dark Themed Page</h2>
-        <p>This is a simple dark themed webpage with red and dark purple accents. The main background is black, and the text is white for contrast.</p>
+        <h2>Blitz-Trigger/h2>
+        <p>Blitz-trigger is a closed source application that adds more features to the game valorant without messing with it's features, this app is made to help you play valorant with easier difficulty. I want to add that this app isn't the best in the world and it's codded in python given it less accesibility to the game but makes at hardly detecteble.</p>
         <button class="button">Click Me</button>
     </section>
 
